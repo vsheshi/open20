@@ -1,0 +1,47 @@
+community	\pcd new\			
+directory	\pcd new\PCD\			
+file	\pcd new\PCD\10-140Caratteri.JPG			
+file	\pcd new\PCD\10.MessaggioErrato.JPG			
+file	\pcd new\PCD\12.FormatoPiccoloJPG.JPG			
+file	\pcd new\PCD\21.EtichettaNomeMinuscola.JPG			
+file	\pcd new\PCD\23.RicercaConApice.JPG			
+file	\pcd new\PCD\53.CampiNonPresentiPartecipantiJPG.JPG			
+file	\pcd new\PCD\58.EtichettaDEcrescente.JPG			
+file	\pcd new\PCD\83.Card_Tabella.JPG			
+file	\pcd new\PCD\84.allegati.jpg			
+file	\pcd new\PCD\87.PulsanteSegnalazione.jpg			
+file	\pcd new\PCD\95.CaricamentoGIF.JPG			
+file	\pcd new\PCD\103.RicercaPerTitoloDiscussioneConCarattereAccentato.JPG			
+file	\pcd new\PCD\103.RicercaTestoDiscussioneConCarattereAccentato.JPG			
+file	\pcd new\PCD\104.CreateDaMe_VisualizzazioneSoloTabella.JPG			
+file	\pcd new\PCD\104.Discussioni_ModalitàVisualizzazioneDoppia.JPG			
+file	\pcd new\PCD\107.ControlloDestinatari_RicercaErrataCarattereAccentato.JPG			
+file	\pcd new\PCD\124.Filtro TIPO DI EVENTO.png			
+file	\pcd new\PCD\125.Ricerca.mp4			
+file	\pcd new\PCD\128.Mouseover Segnala_Eventi.JPG			
+file	\pcd new\PCD\129.Tab Allegati.mp4			
+file	\pcd new\PCD\131.SALVA e CHIUDI.JPG			
+file	\pcd new\PCD\134.Orario Evento.jpg			
+file	\pcd new\PCD\145.RicercaSlashNonFunzionante-1.JPG			
+file	\pcd new\PCD\145.RicercaSlashNonFunzionante-2.JPG			
+file	\pcd new\PCD\150.NessunaImmagineAutore.JPG			
+file	\pcd new\PCD\173.LabelSintatticamenteErrataContributiTotali.JPG			
+file	\pcd new\PCD\ERROREinterno.JPG			
+file	\pcd new\PCD\pcd_19_04_2018.xlsx			
+file	\pcd new\PCD\Test 110.JPG			
+directory	\pcd new\PCD\75.Crea NOTIZIE\			
+file	\pcd new\PCD\75.Crea NOTIZIE\75.LabelTitolo.jpg			
+file	\pcd new\PCD\75.Crea NOTIZIE\Notizie con stesso titolo.JPG			
+file	\pcd new\PCD\75.Crea NOTIZIE\Registrazione #admin.mp4			
+file	\pcd new\PCD\75.Crea NOTIZIE\Registrazione #editor.mp4			
+directory	\pcd new\PCD\76\			
+file	\pcd new\PCD\76\76.LeggiEffettoMouseover_viasualizz TABELLA.jpg			
+file	\pcd new\PCD\76\76.Leggi tutto.JPG			
+file	\pcd new\PCD\76\76.Leggi tutto_visualizz CARD.JPG			
+directory	\pcd new\PCD\79.Frecce ordinamento\			
+file	\pcd new\PCD\79.Frecce ordinamento\ordinamento.jpg			
+file	\pcd new\PCD\79.Frecce ordinamento\Registrazione # ordinamento.mp4			
+directory	\pcd new\PCD\88.Inserisci Allegati in Commenti\			
+file	\pcd new\PCD\88.Inserisci Allegati in Commenti\88.Messaggio file selezionati superiore a 6_OK.jpg			
+file	\pcd new\PCD\88.Inserisci Allegati in Commenti\88.Messagsio NessunFileSelezionato_KO.jpg			
+file	\pcd new\PCD\88.Inserisci Allegati in Commenti\Registrazione # Inserisci ALLEGATI in COMMENTI.mp4			

@@ -1,0 +1,6 @@
+community	\test peppe\			
+file	\test peppe\Inres.pfx			
+file	\test peppe\Inres_Certificate.txt			
+file	\test peppe\Inres_csr.txt			
+file	\test peppe\Inres_Intermediate.txt			
+file	\test peppe\Inres_Private_Key.txt			

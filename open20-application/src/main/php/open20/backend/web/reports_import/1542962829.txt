@@ -1,0 +1,14 @@
+community	\mmmm\			
+community	\mmmm\macedonia\			
+file	\mmmm\macedonia\about.PNG			
+file	\mmmm\macedonia\competent.PNG			
+file	\mmmm\macedonia\contactpoint.PNG			
+file	\mmmm\macedonia\EMAIL CREDENZIALI.PNG			
+file	\mmmm\macedonia\home.PNG			
+file	\mmmm\macedonia\ICONA.PNG			
+file	\mmmm\macedonia\incoming.PNG			
+file	\mmmm\macedonia\LAYCA.png			
+file	\mmmm\macedonia\LAYCP.png			
+file	\mmmm\macedonia\layot form utente.PNG			
+file	\mmmm\macedonia\layout notifica.PNG			
+file	\mmmm\macedonia\users elenco.PNG			

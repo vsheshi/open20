@@ -1,0 +1,14 @@
+community	\MACEDONE\			
+directory	\MACEDONE\macedonia\			
+file	\MACEDONE\macedonia\about.PNG			
+file	\MACEDONE\macedonia\competent.PNG			
+file	\MACEDONE\macedonia\contactpoint.PNG			
+file	\MACEDONE\macedonia\EMAIL CREDENZIALI.PNG			
+file	\MACEDONE\macedonia\home.PNG			
+file	\MACEDONE\macedonia\ICONA.PNG			
+file	\MACEDONE\macedonia\incoming.PNG			
+file	\MACEDONE\macedonia\LAYCA.png			
+file	\MACEDONE\macedonia\LAYCP.png			
+file	\MACEDONE\macedonia\layot form utente.PNG			
+file	\MACEDONE\macedonia\layout notifica.PNG			
+file	\MACEDONE\macedonia\users elenco.PNG			

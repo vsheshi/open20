@@ -1,0 +1,13 @@
+community	\Prova 2\			
+community	\Prova 2\giiamos\			
+directory	\Prova 2\giiamos\controllers\			
+directory	\Prova 2\giiamos\crud\			
+directory	\Prova 2\giiamos\crud\default\			
+directory	\Prova 2\giiamos\crud\default\views\			
+directory	\Prova 2\giiamos\crud\providers\			
+directory	\Prova 2\giiamos\crud\wizard\			
+directory	\Prova 2\giiamos\crud\wizard\views\			
+directory	\Prova 2\giiamos\model\			
+directory	\Prova 2\giiamos\model\default\			
+directory	\Prova 2\giiamos\widgets\			
+directory	\Prova 2\giiamos\widgets\default\			

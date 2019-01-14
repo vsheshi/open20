@@ -1,0 +1,13 @@
+community	\test peppe\			
+community	\test peppe\giiamos\			
+directory	\test peppe\giiamos\controllers\			
+directory	\test peppe\giiamos\crud\			
+directory	\test peppe\giiamos\crud\default\			
+directory	\test peppe\giiamos\crud\default\views\			
+directory	\test peppe\giiamos\crud\providers\			
+directory	\test peppe\giiamos\crud\wizard\			
+directory	\test peppe\giiamos\crud\wizard\views\			
+directory	\test peppe\giiamos\model\			
+directory	\test peppe\giiamos\model\default\			
+directory	\test peppe\giiamos\widgets\			
+directory	\test peppe\giiamos\widgets\default\			
