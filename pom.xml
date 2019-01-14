@@ -1,0 +1,26 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<parent>
+	<groupId>it.lispa</groupId>
+	<artifactId>cm</artifactId>
+	<version>1.4.3</version>
+</parent>
+<groupId>it.lispa.open20</groupId> 
+<artifactId>open20</artifactId>
+<version>1.0.0</version>	
+<name>open20</name>
+<packaging>pom</packaging>
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+<modules>
+	<module>open20-application</module>
+	<module>open20-database</module>
+ 	<module>open20-properties</module>
+	<module>open20-release</module>
+</modules>
+		
+</project>
