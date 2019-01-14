@@ -11,4 +11,4 @@ Lombardia Informatica S.p.A.
 Open20 e' rilasciata con licenza europea EUPL mantenuta a tradotta nelle 22 lingue della comunità, direttamente dalla Commissione Europea.
 # Documentazione
 La documentazione di Open20 è reperibile dai seguenti link:
-
+ [Wiki](github.com/lispa/open20/wiki) 
