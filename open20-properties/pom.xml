@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+	  <groupId>it.lispa.open20</groupId> 
+	  <artifactId>open20</artifactId>
+	  <version>1.0.0</version>
+	</parent>
+	
+	<artifactId>open20-properties</artifactId>
+<version>1.0.0</version>	
+	<packaging>zip</packaging>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				 <groupId>it.lispa.siss.maven-plugins</groupId>
+  				<artifactId>custom-package-plugin</artifactId>
+  				<version>2.0.1</version>
+				<extensions>true</extensions>
+				<configuration>
+					<sourceDirectory>src/main/resources</sourceDirectory>
+				</configuration>
+			</plugin>
+	
+		</plugins>
+			</build>
+	<dependencies>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils-core</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+	</dependencies>
+
+<licenses>
+    <license>
+      <name>Lispa License, Version 1.0</name>
+      <url>http://cm-maven.adlispa.local/licenza/license.txt</url>
+      <distribution>repo</distribution>
+      <comments>Licenza di prodotti erogati da Lispa S.p.A per Regione Lombardia</comments>
+    </license>
+  </licenses>
+</project>

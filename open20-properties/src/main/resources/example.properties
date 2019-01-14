@@ -1,0 +1,6 @@
+#email referente
+email_referente=Giovanni_Franco_DAdda@regione.lombardia.it
+
+# File di configurazione dei comandi di Amministrazione
+AdminUser=
+AdminPassword=
