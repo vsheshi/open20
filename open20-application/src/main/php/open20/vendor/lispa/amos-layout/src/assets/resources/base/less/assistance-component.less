@@ -1,0 +1,39 @@
+/* AMOS-LAYOUT */
+/*assistance div on dashboard button right position*/
+
+.assistance {
+  a{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    background-color: contrast(@secondary-color);
+    border: 2px solid @utility-clear;
+    color: @secondary-color;
+    padding:10px 5px;
+    text-decoration: none;
+
+    @media(max-width: 767px) {
+      position: relative;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+
+    &:hover {
+      text-decoration: none;
+      span + span {
+        text-decoration: underline;
+      }
+    }
+
+    .icon-assistance {
+      font-size: 1.8em;
+      text-decoration: none;
+      + span {
+        padding-left: 5px;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

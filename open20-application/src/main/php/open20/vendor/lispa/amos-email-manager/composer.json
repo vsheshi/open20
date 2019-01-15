@@ -1,0 +1,39 @@
+{
+    "name": "lispa/amos-email-manager",
+    "description": "Modulo di gestione code email - plugin",
+    "keywords": [
+        "amos",
+        "notifiche",
+        "yii2"
+    ],
+    "homepage": "http://www.lispa.it/",
+    "type": "component",
+    "proscription": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "lispa/amos-core" : "*",
+        "lispa/amos-dashboard" : "*",
+        "mustache/mustache": "^2.9.0",
+        "baibaratsky/yii2-serialized-attributes-behavior": "*",
+        "yiidoc/yii2-redactor": "*"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "secure-http": false
+    },
+    "autoload": {
+        "psr-4": {
+            "lispa\\amos\\emailmanager\\": "src"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "php yii migrate --migrationPath=@vendor/lispa/amos-email-manager/migrations --interactive=0"
+    }
+}

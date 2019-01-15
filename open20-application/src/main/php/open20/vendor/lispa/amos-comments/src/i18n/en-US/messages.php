@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * Lombardia Informatica S.p.A.
+ * OPEN 2.0
+ *
+ *
+ * @package    lispa\amos\comments\i18n\en-US
+ * @category   CategoryName
+ */
+
+return [
+    '#COMMENT_TITLE' => 'Comment',
+    '#COMMENT_BUTTON' => 'Comment',
+    '#COMMENT_ATTACHMENTS' => 'Comment attachments',
+    '#COMMENT_REPLY_ATTACHMENTS' => 'Comment reply attachments',
+    '#ATTACHMENTS' => 'Attachments',
+    'Close' => 'Close',
+    'Comment' => 'Comment',
+    'Comment content' => 'Comment content',
+    'Comment ID' => 'Comment ID',
+    'Comment not found.' => 'Comment not found.',
+    'Comment not updated, check the data entered.' => 'Comment not updated, check the data entered.',
+    'Comment reply not found.' => 'Comment reply not found.',
+    'Comment reply not updated, check the data entered.' => 'Comment reply not updated, check the data entered.',
+    'Comment reply successfully deleted.' => 'Comment reply successfully deleted.',
+    'Comment reply successfully updated.' => 'Comment reply successfully updated.',
+    'Comment Reply Text' => 'Comment Reply Text',
+    'Comment successfully deleted.' => 'Comment successfully deleted.',
+    'Comment successfully updated.' => 'Comment successfully updated.',
+    'Comment Text' => 'Comment Text',
+    'Commentable Context' => 'Commentable Context',
+    'Comments' => 'Comments',
+    'Comments Replies' => 'Comments Replies',
+    'Context' => 'Context',
+    'Context ID' => 'Context ID',
+    'Create' => 'Create',
+    'Created At' => 'Created At',
+    'Created By' => 'Created By',
+    'Deleted At' => 'Deleted At',
+    'Deleted By' => 'Deleted By',
+    'Error during save comment reply.' => 'Error during save comment reply.',
+    'Error during save comment.' => 'Error during save comment.',
+    'Error loading parameters in the model.' => 'Error loading parameters in the model.',
+    'Errors while deleting a comment reply.' => 'Errors while deleting a comment reply.',
+    'Errors while deleting comment reply.' => 'Errors while deleting comment reply.',
+    'Errors while deleting comment.' => 'Errors while deleting comment.',
+    'General' => 'General',
+    'ID' => 'ID',
+    'Last comments' => 'Last comments',
+    'Loading' => 'Loading',
+    'Profile image' => 'Profile image',
+    'Reply' => 'Reply',
+    'Reply to comment' => 'Reply to comment',
+    'Reset' => 'Reset',
+    'Search' => 'Search',
+    'Search by comment reply text' => 'Search by comment reply text',
+    'Search by comment text' => 'Search by comment text',
+    'Table' => 'Table',
+    'The request is not AJAX.' => 'The request is not AJAX.',
+    'Update' => 'Update',
+    'Updated At' => 'Updated At',
+    'Updated By' => 'Updated By',
+    'User avatar' => 'User avatar',
+    'Validation errors! Check the data entered.' => 'Validation errors! Check the data entered.',
+    'Write a comment' => 'Write a comment',
+    'Write a reply' => 'Write a reply',
+    '#AJAX_ERROR_COMMENT' => "Error while adding comment",
+    '#AJAX_ERROR_COMMENT_REPLY' => "Error while adding comment reply",
+    '#EMPTY_COMMENT' => "You can not add an empty comment",
+    '#EMPTY_COMMENT_REPLY' => "You can not add an empty comment reply",
+    '#notification_email_subject' => 'New comment on the content {0}: {1}',
+    '#user_published_comment' => '{0} has posted a comment',
+    '#there_have_content_interest' => 'in {0} {1} that you follow'
+];

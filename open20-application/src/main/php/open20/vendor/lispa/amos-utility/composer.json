@@ -1,0 +1,19 @@
+{
+    "name": "lispa/amos-utility",
+    "description": "Sistema AMOS per le utility",
+    "keywords": ["amos", "yii2", "utility"],
+    "homepage": "http://git.lispa.it/amos/amos-utility",
+    "type": "component",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "lispa/amos-core" : "*",
+        "ad7six/dsn":"*",
+        "egorspk/yii2-loganalyzer":"*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lispa\\amos\\utility\\": "src"
+        }
+    }
+}

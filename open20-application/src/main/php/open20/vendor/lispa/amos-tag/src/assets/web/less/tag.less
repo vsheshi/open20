@@ -1,0 +1,46 @@
+@import (optional) "../../vendor/lispa/amos-layout/src/assets/resources/base/less/variables.less";
+@import (optional) "../../vendor/lispa/amos-core/views/assets/web/css/less/variables.less";
+@import "variables-tag.less";
+ 
+#amos-tag {
+  .kv-tree-wrapper {
+    border-bottom: 0 none !important;
+  }
+
+  .amos-tag-tree-container{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  .preview_tag_tree {
+    .tag_selected{
+      background-color: #f0f0ee;
+      border: 1px solid #dddddd;
+      cursor: pointer;
+      font-size: 12px;
+      margin: 3px;
+      padding: 3px;
+      text-transform: uppercase;
+      display: table;
+
+      .tag_selected_part {
+        display: table-cell;
+
+        &.tag_selected_remove_container{
+          cursor: pointer;
+          width: 20px;
+          text-align: center;
+        }
+
+        .tag_selected_label{
+          font-weight: bold;
+        }
+
+        .tag_selected_parents {
+          font-size: 10px;
+        }
+
+      }
+    }
+  }
+}

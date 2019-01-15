@@ -1,0 +1,172 @@
+@import (optional) "../../vendor/lispa/amos-layout/src/assets/resources/base/less/variables.less";
+@import (optional) "../../vendor/lispa/amos-core/views/assets/web/css/less/variables.less";
+@import "variables-documents.less";
+
+.box-widget.hierarchical-documents {
+  background-color: #ffffff;
+  .box-widget-title {
+    margin-right: 5px;
+  }
+  .read-all {
+    text-align: left;
+    float: left;
+    margin: 8px 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: @color-grey;
+    &:after {
+      content: ' >>';
+    }
+  }
+
+  //first case of change-view into graphic widget
+  .btn-group div.btn-tools-primary {
+    padding: 4px 12px;
+    min-height: 28px;
+    height: 100%;
+    margin-top: 3px;
+    p {
+      font-size: calc(0.8em);
+      float: right;
+      margin: 0 0 0 6px;
+      //padding-bottom: 4px;
+      & > span { //add by ::tHtml translate
+        margin-top: 3px;
+      }
+    }
+  }
+  .btn-group div.btn-tools-primary span:first-child {
+    font-size: 1em;
+    float: left;
+    line-height: 0.9
+  }
+
+  .dropdown-menu.dropdown-menu-change-view.dropdown-menu-left > li > a > p {
+    display: inline-block;
+  }
+
+  .hierarchical-widget-address-bar {
+    margin: 15px 0;
+    > a {
+      text-decoration: none;
+    }
+    > a:not(:first-child) {
+      margin-left: 5px;
+    }
+    .dash-folder-open {
+      color: inherit;
+    }
+  }
+
+  .hierarchical-widget-list {
+    margin-bottom: 50px;
+  }
+
+  .card-container {
+    border: none;
+    height: 100%;
+    .icon-body {
+      padding: 0;
+    }
+    .directory-title {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+    &.file {
+      background-color: lighten(@color-grey, 40%);
+      border-radius: 10px;
+    }
+  }
+  .card-container .widget-listbox-option article .container-icon {
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid @color-grey;
+    text-align: center;
+    .dash {
+      font-size: 50px;
+    }
+  }
+
+  //icon color
+  .dash-folder-open {
+    color: @icon-folder;
+  }
+  .dash-download-docx,
+  .dash-file-word-o,
+  .dash-download-doc,
+  .dash-file-doc-o,
+  .dash-file-docx-o{
+    color: @icon-blue;
+  }
+  .dash-download-xlsx,
+  .dash-file-excel-o,
+  .dash-download-xls,
+  .dash-file-xls-o,
+  .dash-file-xlsx-o{
+    color: @icon-green;
+  }
+  .dash-download-pdf,
+  .dash-file-pdf-o,
+  .dash-file-pdf-o2,
+  .dash-download-rtf {
+    color: @icon-red;
+  }
+  .dash-download-txt,
+  .dash-file-text-o,
+  .dash-file-txt-o,
+  .dash-file-o,
+  .dash-download-general {
+    color: @icon-black;
+  }
+
+  //icon table view
+  td a {
+    text-decoration: none;
+    .dash {
+      font-size: 35px;
+    }
+  }
+
+}
+.documents-index,
+.box-widget.hierarchical-documents{
+  //icon color
+  .dash-folder-open {
+    color: @icon-folder;
+  }
+  .dash-download-docx,
+  .dash-file-word-o,
+  .dash-download-doc,
+  .dash-file-doc-o,
+  .dash-file-docx-o{
+    color: @icon-blue;
+  }
+  .dash-download-xlsx,
+  .dash-file-excel-o,
+  .dash-download-xls,
+  .dash-file-xls-o,
+  .dash-file-xlsx-o{
+    color: @icon-green;
+  }
+  .dash-download-pdf,
+  .dash-file-pdf-o,
+  .dash-file-pdf-o2,
+  .dash-download-rtf {
+    color: @icon-red;
+  }
+  .dash-download-txt,
+  .dash-file-text-o,
+  .dash-file-txt-o,
+  .dash-file-o,
+  .dash-download-general {
+    color: @icon-black;
+  }
+}
+
+.documents-index .dash:not(.dash-folder-open){
+  font-size: 2.5em;
+}
+.documents-index .dash.dash-folder-open{
+  font-size: 2.2em;
+}

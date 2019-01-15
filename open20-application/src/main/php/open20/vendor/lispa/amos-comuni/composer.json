@@ -1,0 +1,25 @@
+{
+    "name": "lispa/amos-comuni",
+    "description": "Dati ISTAT - Comuni, province, regioni, nazioni, continenti aggiornati a LUGLIO 2016",
+    "keywords": ["amos", "yii2", "comuni"],
+    "homepage": "http://www.lispa.it/",
+    "type": "library",
+    "proscription": "",
+    "support": {
+        "source": "https://github.com/lispa/amos-comuni"
+    },
+    "require": {
+        "yiisoft/yii2": "*",
+        "lispa/amos-core" : "*"        
+    },    
+    "config": {
+        "process-timeout": 1800,
+        "secure-http": false
+    },
+    "autoload": {
+        "psr-4": {
+            "lispa\\amos\\comuni\\": "src"
+        }
+    }
+}
+ 

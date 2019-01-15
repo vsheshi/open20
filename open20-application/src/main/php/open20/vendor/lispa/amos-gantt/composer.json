@@ -1,0 +1,20 @@
+{
+  "name": "lispa/amos-gantt",
+  "description": "Amos Gantt",
+  "keywords": [
+    "amos",
+    "gantt"
+  ],
+  "homepage": "http://www.lispa.it/",
+  "type": "component",
+  "require": {
+    "php": ">=5.4.0",
+    "lispa/amos-core" : "*",
+    "bower-asset/gantt": "~4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "lispa\\amos\\gantt\\": "src"
+    }
+  }
+}

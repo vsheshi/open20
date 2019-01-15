@@ -1,0 +1,23 @@
+{
+  "name": "lispa/amos-my-activities",
+  "description": "AMOS plugin to manage platform activities)",
+  "keywords": ["amos", "yii2", "activities", "myactivities"],
+  "homepage": "http://www.lispa.it/",
+  "type": "component",
+  "proscription": "BSD-3-Clause",
+  "require": {
+    "php": ">=5.4.0",
+    "lispa/amos-core" : "*",
+    "lispa/amos-admin" : "*",
+    "lispa/amos-notify" : "*",
+    "lispa/amos-workflow" : "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "lispa\\amos\\myactivities\\": "src"
+    }
+  },
+  "require-dev": {
+    "yiisoft/yii2-faker": "*"
+  }
+}

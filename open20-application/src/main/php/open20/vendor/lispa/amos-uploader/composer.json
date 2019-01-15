@@ -1,0 +1,24 @@
+{
+    "name": "lispa/amos-uploader",
+    "description": "File Uploader for Amos",
+    "keywords": ["amos", "yii2", "uploader"],
+    "homepage": "http://www.lispa.it/",
+    "type": "component",
+    "proscription": "BSD-3-Clause",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "lispa/amos-core" : "*"
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "lispa\\amos\\uploader\\": "src"
+        }
+    }
+}

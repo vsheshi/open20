@@ -1,0 +1,109 @@
+@import (optional) "../../vendor/lispa/amos-core/views/assets/web/css/less/variables.less";
+@import (optional) "../../vendor/lispa/amos-layout/src/assets/resources/base/less/variables.less";
+@import "variables-admin.less";
+
+//-----------------------------------------------
+// FACILITATOR
+//-----------------------------------------------
+.facilitator-content {
+  background-color: @light-background-color;
+  padding: @padding-medium;
+  margin: @margin-default 0;
+
+  .facilitator-id {
+    background-color: #ffffff;
+  }
+}
+
+//-----------------------------------------------
+// WIZARD ADMIN
+//-----------------------------------------------
+.rounded-number {
+  padding-left: @padding-medium;
+}
+
+//-----------------------------------------------
+// ADMIN VIEW PROFILE
+//-----------------------------------------------
+.field-user-username {
+  dl {
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 767px) {
+  .table-striped {
+    .container-round-img-sm {
+      margin: 0;
+    }
+  }
+}
+
+.container-square-img-sm { //used only for widget graphics
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+//-----------------------------------------------
+// DASHBOARD WIDGET GRAPHIC
+//-----------------------------------------------
+
+.myprofile {
+/*  display: block;
+  overflow: hidden;*/
+  background-color: lighten(desaturate(@primary-color, 50%), 60%);
+  max-height: 165px;
+
+  section{
+    padding: 0;
+    .widget-listbox-option {
+      margin: 0;
+      article{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-height: 130px;
+        .text-admin-wgt{
+          padding: 0 @padding-min;
+        }
+      }
+    }
+  }
+
+  .dark-toolbar {
+    background-color: @primary-color;
+    color: #fff;
+    height: 35px;
+    .manage{
+      .manage-menu{
+        color: #fff;
+      }
+    }
+  }
+  .box-widget-subtitle{
+    //margin-top: @margin-medium;
+    font-size: 1.5em;
+  }
+  p.box-widget-text {
+    a{
+      color:#000;
+      line-height: 1.20em;
+    }
+  }
+}
+
+@media screen and (max-width: 639px) and (min-width: 320px) {
+    .grid-item {
+      height: auto;
+    }
+    .myprofile{
+      .container-square-img-sm{
+        width: 100px;
+      }
+    }
+}

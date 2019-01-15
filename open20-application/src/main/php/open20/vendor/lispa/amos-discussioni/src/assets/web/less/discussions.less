@@ -1,0 +1,51 @@
+@import (optional) "../../vendor/lispa/amos-layout/src/assets/resources/base/less/variables.less";
+@import (optional) "../../vendor/lispa/amos-core/views/assets/web/css/less/variables.less";
+@import "variables-discussions.less";
+
+//-----------------------------------------------
+// DASHBOARD WIDGET GRAPHIC
+//-----------------------------------------------
+
+.latest-discussions {
+  height: inherit;
+  /*  overflow: hidden;
+    display: block;
+    background-color: #fff;*/
+  section{
+    height: 83%;
+    overflow:hidden;
+  }
+  .widget-listbox-option {
+    article {
+      display:flex;
+      flex-direction: row;
+      .listbox-date{
+        p {
+          margin: 0;
+        }
+      }
+      .container-img {
+        width: 15%;
+        margin-right:10px;
+      }
+    }
+    .footer-listbox {
+      position: relative !important;
+      border-bottom: 1px solid #999;
+      p {
+        margin: 0;
+        font-size: 0.8em;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 939px) and (min-width: 320px) {
+  .latest-discussions .widget-listbox-option article .container-img{
+    width: 11%;
+  }
+}
+
+

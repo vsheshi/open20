@@ -1,0 +1,137 @@
+/* AMOS-LAYOUT */
+
+/* TOOLBAR DEFAULT VARIABLES */
+@toolbar-background-color: lighten(desaturate(@primary-color, 50%), 50%);
+
+/* CONTAINER TOOLS
+toolbar used for search and add element in create/update view
+*/
+.container-tools {
+  background-color: @toolbar-background-color;
+  padding: @padding-medium @padding-default;
+  margin-bottom: @margin-default;
+  float: left;
+  width: 100%;
+  .btn-search-admin { //TODO include input + search + delete into update views
+    display: flex;
+  }
+}
+
+/* CONTAINER CHANGE VIEW
+toolbar on views used for add element, order, download search or change view
+*/
+.container-change-view {
+  background-color: @toolbar-background-color;
+  padding: @padding-medium @padding-default;
+  margin-bottom: @margin-default;
+  float: left;
+  width: 100%;
+
+  #change-view-dropdown-download { // into grid view
+    margin-right: 3px;
+    .caret {
+      display: none;
+    }
+    .btn.btn-tools-primary.dropdown-toggle { //export button
+      padding: 0 10px;
+    }
+  }
+
+  & + div[class$="-index"] { //order and search div
+    float: left;
+    width: 100%;
+
+    [data-toggle-element^="form"] {
+      padding: @padding-default 0;
+      border: 2px solid @toolbar-background-color;
+      background-color: #ffffff;
+      margin-top: -@margin-default;
+      margin-bottom: @margin-default;
+
+      h2 {
+        text-transform: uppercase;
+        color: @primary-color;
+      }
+    }
+  }
+
+  .btn-tools-container {
+    width: 100%;
+    float: left;
+    //display: flex;
+    //flex-wrap: wrap;
+    //align-items: center;
+    //justify-content: space-between;
+
+    > .btn + .btn { /*all btn not in tools-right*/
+      margin-left: 3px;
+    }
+
+    .btn-group div.btn-tools-primary { /*change view like button style*/
+      padding-bottom: 0;
+      padding-top: 6px;
+      height: 32px;
+      span {
+        &:first-child {
+          float: left;
+          line-height: 0.9;
+          &:before {
+            font-size: 1.3em;
+          }
+        }
+      }
+      p {
+        font-size: calc(@btn-font-size - 0.20em);
+        float: right;
+        margin: 0 0 0 6px; //override bootstrap margin
+        > span { //TODO some change view buttons are different because span not exist (used error ::t instead of correct ::tHtml thad add span)
+          margin-top: 3px;
+        }
+      }
+
+    }
+
+    .tools-right {
+      float: right;
+    }
+    /*.ui-button-text-only .ui-button-text { //TODO REMOVE?
+      padding: 3px 0;
+    }*/
+  }
+
+  .dropdown-menu-change-view li {
+    a, a:hover {
+      text-decoration: none;
+    }
+    p {
+      display: inline;
+    }
+  }
+
+}
+
+/* WORKFLOW TRANSITION WIDGET
+toolbar that show current status on top page in create/update view
+*/
+.workflow-transition-widget {
+  background-color: @toolbar-background-color;
+  width: 100%;
+  float: left;
+  padding: 5px;
+  button {
+    margin: 5px 0;
+  }
+  .message {
+    margin-left: 10px;
+    h4, h3 {
+      margin: 0;
+    }
+  }
+  hr {
+    margin-top: 0;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 1px dashed @border-color-default;
+    clear: both;
+  }
+}

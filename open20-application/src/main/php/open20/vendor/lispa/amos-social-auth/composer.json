@@ -1,0 +1,19 @@
+{
+    "name": "lispa/amos-social-auth",
+    "description": "Social Auth",
+    "keywords": ["amos", "auth", "social", "yii2"],
+    "homepage": "https://bitbucket.org/lispa/amos-social-auth",
+    "type": "component",
+    "require": {
+        "php": ">=5.4.0",
+        "lispa/amos-admin" : "*",
+        "lispa/amos-core" : "*",
+        "lispa/amos-attachments" : "*",
+        "hybridauth/hybridauth": "~2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "lispa\\amos\\socialauth\\": "src"
+        }
+    }
+}

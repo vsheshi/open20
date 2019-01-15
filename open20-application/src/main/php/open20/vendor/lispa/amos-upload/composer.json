@@ -1,0 +1,36 @@
+{
+    "name": "lispa/amos-upload",
+    "description": "Gestione Upload - plugin",
+    "keywords": ["amos", "upload", "file", "yii2"],
+    "homepage": "http://www.lispa.it/",
+    "type": "component",
+    "proscription": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "lispa/amos-core" : "*",
+        "lispa/yii2-filemanager" : "*"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "secure-http": false
+    },    
+    "autoload": {
+        "psr-4": {
+            "lispa\\amos\\upload\\": "src"
+        }
+    },
+    "scripts": {
+        "post-install-cmd":
+        [
+            "php yii migrate --migrationPath=@vendor/pendalf89/yii2-filemanager/migrations --interactive=0",
+            "php yii migrate --migrationPath=@vendor/amos-upload/migrations --interactive=0"
+        ]       
+    }
+}

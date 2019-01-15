@@ -1,0 +1,84 @@
+/* AMOS-LAYOUT */
+
+/* TAGS DEFAULT VARIABLES */
+@tags-color: lighten(@secondary-color, 30%);
+
+.tags-title {
+  border-bottom: 2px solid @primary-color;
+  padding-bottom: @padding-min;
+  text-transform: capitalize;
+}
+.tag-form{
+  padding-top: @padding-default;
+}
+.tree-tags {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 2px dashed @border-color-default;
+}
+
+.tag {
+  padding: 0px 5px;
+  margin: 2px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.15em;
+  font-weight: normal;
+  float: left;
+  background: @tags-color;
+  color: contrast(@tags-color);
+}
+
+.taglist {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+
+  li {
+    float: left;
+  }
+  .tag-item {
+    display: inline-block;
+    line-height: 26px;
+    position: relative;
+    //margin: 0 10px 10px 0;
+    text-decoration: none;
+    width: auto;
+    padding: 1px 15px 5px 15px;
+    background-color: #efefef;
+    margin: 5px;
+
+    /*@media (min-width: 768px) and (max-width: 991px){
+      width: 100%;
+    }
+
+    @media (min-width: 500px) and (max-width: 767px){
+      width: 48%;
+    }
+    @media (max-width: 499px) {
+      width: 100%;
+    }*/
+
+    > div{
+      > .am-label {
+        margin-right: @margin-min;
+      }
+
+      p {
+        font-size: 0.95em;
+        margin: 0;
+        line-height: 10px;
+      }
+
+      .tag-label:only-child{
+        display: inline;
+        margin-top: 11px;
+      }
+    }
+  }
+}

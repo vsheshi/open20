@@ -1,0 +1,26 @@
+{
+    "name": "pcd20/import",
+    "description": "Extension importing Documentals in PCD20",
+    "keywords": [
+        "yii2",
+        "extension",
+        "import",
+        "file",
+        "upload"
+    ],
+    "homepage": "http://www.lispa.it/",
+    "type": "yii2-extension",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.0",
+        "lispa/amos-core": "~1.9.20",
+        "execut/yii2-widget-bootstraptreeview": "dev-master",
+        "lispa/amos-uploader": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "pcd20\\import\\": "src"
+        }
+    }
+}

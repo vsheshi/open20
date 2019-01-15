@@ -1,0 +1,45 @@
+//-----------------------------------------------
+// MASONRY
+//-----------------------------------------------
+/*.grid-item {
+  margin-bottom: @margin-default;
+}*/
+
+/*.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid {
+  .grid-sizer{
+    width: @masonry-width;
+
+    @media(max-width: 992px){
+      width: @masonry-medium-width;
+    }
+
+    @media(max-width: 768px){
+      width: @masonry-full-width;
+    }
+  }
+  .grid-item{
+    width: @masonry-width;
+    .post-image{
+      padding: 0;
+      height: 150px;
+      overflow: hidden;
+      margin: @margin-min 0;
+
+      img{
+        width: 100%;
+        max-width:100%;
+        margin: 0 auto;
+
+        &.full-height {
+          height: auto;
+        }
+      }
+    }
+  }
+}*/

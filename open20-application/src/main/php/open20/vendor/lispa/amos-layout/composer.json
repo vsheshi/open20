@@ -1,0 +1,16 @@
+{
+    "name": "lispa/amos-layout",
+    "description": "Amos Basic Layout",
+    "keywords": ["amos", "yii2", "less", "css", "layout"],
+    "homepage": "https://bitbucket.org/lispa/amos-layout",
+    "type": "component",
+    "require": {
+        "php": ">=5.4.0",
+        "lispa/amos-core" : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lispa\\amos\\layout\\": "src"
+        }
+    }
+}

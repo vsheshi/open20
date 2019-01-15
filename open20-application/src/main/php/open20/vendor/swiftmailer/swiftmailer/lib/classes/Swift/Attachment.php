@@ -1,0 +1,53 @@
+<?php
+
+/*
+ * (l) 2004-2009 Chris Corbyn
+ *
+ */
+
+/**
+ * Attachment class for attaching files to a {@link Swift_Mime_SimpleMessage}.
+ *
+ */
+class Swift_Attachment extends Swift_Mime_Attachment
+{
+    /**
+     * Create a new Attachment.
+     *
+     * Details may be optionally provided to the constructor.
+     *
+     * @param string|Swift_OutputByteStream $data
+     * @param string                        $filename
+     * @param string                        $contentType
+     */
+    public function __construct($data = null, $filename = null, $contentType = null)
+    {
+        call_user_func_array(
+            array($this, 'Swift_Mime_Attachment::__construct'),
+            Swift_DependencyContainer::getInstance()
+                ->createDependenciesFor('mime.attachment')
+            );
+
+        $this->setBody($data);
+        $this->setFilename($filename);
+        if ($contentType) {
+            $this->setContentType($contentType);
+        }
+    }
+
+    /**
+     * Create a new Attachment from a filesystem path.
+     *
+     * @param string $path
+     * @param string $contentType optional
+     *
+     * @return Swift_Mime_Attachment
+     */
+    public static function fromPath($path, $contentType = null)
+    {
+        return (new self())->setFile(
+            new Swift_ByteStream_FileByteStream($path),
+            $contentType
+        );
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "lispa/amos-groups",
+    "description": "Amos Groups",
+    "keywords": ["amos", "yii2", "groups"],
+    "type": "component",
+    "proscription": "BSD-3-Clause",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "lispa/amos-core" : "*",
+        "lispa/amos-email-manager" : "*"
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "lispa\\amos\\groups\\": "src"
+        }
+    }
+}

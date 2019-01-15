@@ -1,0 +1,17 @@
+.gantt_task_content {
+    font-weight: bold;
+}
+
+.btn-change-scale-group button {
+    background-color: #adadad;
+    color: #FFFFFF;
+}
+
+.controls-bar-separator {
+    padding-left: 15px;
+}
+
+.btn-change-scale-group .btn.btn-secondary.selected{
+    background-color: #fff;
+    color: #888787;
+}

@@ -1,0 +1,353 @@
+/* AMOS-LAYOUT */
+
+/*BASIC WIDGET DEFAULT VARIABLES*/
+@shared-widget-hover-color: lighten(desaturate(@primary-color, 50%), 50%);
+
+/*POST HEADER WIDGET
+show on post top (community, discussion, etc)
+it show infos about post creator and flag report*/
+.post-header {
+  overflow: visible;
+  margin-bottom: @margin-default;
+
+  .creator {
+    font-size: 1.215em;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 18px 0 9px 0;
+    color: #000;
+
+    float: left;
+    max-width: 50%;
+
+    @media (min-width: 1200px) {
+      max-width: 62%;
+    }
+    @media (max-width: 1199px) and (min-width: 993px) {
+      max-width: 50%;
+    }
+    @media (max-width: 992px) and (min-width: 769px) {
+      max-width: 58%;
+    }
+    @media (max-width: 768px) {
+      max-width: 49%;
+    }
+  }
+
+  .post-header-left {
+    padding: 0;
+    color: @text-main-color;
+
+    > a {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-top: @margin-default;
+      margin-right: @margin-default;
+    }
+    p {
+      margin-top: @margin-min;
+    }
+  }
+  .media-body {
+    padding-left: @padding-min;
+  }
+}
+
+/*PLUGIN LIST WIDGET
+Settings Menu -> Manage widgets
+show all plugin in card view*/
+.plugin-list {
+  .card-widget {
+    text-align: center;
+    min-height: 225px;
+    .item-widget {
+      .icon-dashboard-name {
+        border: 1px solid @border-color-default;
+      }
+      .badge {
+        right: 15px;
+      }
+    }
+    > p {
+      line-height: 1.2;
+    }
+    .chechbox-widget {
+      margin-left: 10px;
+      position: absolute;
+      z-index: 999;
+      input {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+//-----------------------------------------------
+// tools users
+//-----------------------------------------------
+.icon-tools {
+  max-width: 51%;
+  cursor: pointer;
+  float: right;
+
+  a {
+    color: @text-primary-color;
+    text-decoration: none;
+    .am-2 {
+      padding: @margin-medium 0 0 @margin-medium;
+    }
+
+    &:hover {
+      opacity: @text-link-hover-opacity;
+    }
+  }
+  + p {
+    clear: both;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 38%;
+  }
+  @media (max-width: 1199px) and (min-width: 993px) {
+    max-width: 50%;
+  }
+  @media (max-width: 992px) and (min-width: 769px) {
+    max-width: 42%;
+  }
+  @media (max-width: 768px) {
+    max-width: 51%;
+  }
+}
+
+/* MANAGE MENU WIDGET
+show settings icon with dropdown menu
+used on graphics widgets and posts */
+.manage {
+  float: right;
+  margin-top: @margin-default;
+
+  .icon-view + & {
+    margin: @margin-min 0;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+
+    .manage-menu {
+      color: contrast(@primary-color);
+    }
+  }
+
+  .manage-menu {
+    width: 55px;
+    float: right;
+    padding: 0 @padding-medium;
+    color: @text-primary-color;
+    font-size: 1.65em;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+  }
+
+  li.no-action {
+    margin: 0 @margin-min;
+    width: 150px;
+  }
+}
+
+/*POST-INFOS WIDGET
+show infos on bottom post view */
+.post-info {
+  background-color: @light-background-color;
+  padding: @padding-min;
+
+  .item {
+    margin: 2px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    label {
+      margin: 0;
+    }
+  }
+
+  > span {
+    margin-left: @margin-medium;
+
+    > label {
+      margin: 2px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+/*SHARED WIDGET
+show #tags and #attachments */
+.shared {
+  float: left;
+  font-size: 14px;
+  table {
+    margin: @margin-medium 0;
+    td {
+      margin: 0;
+      border: 1px solid @border-color-default;
+
+      a, a:visited, a:focus {
+        text-decoration: none;
+        color: @text-primary-color;
+        display: block;
+        padding: @padding-min @padding-medium;
+        width: 100%;
+        background-color: #FFFFFF;
+      }
+      a:hover {
+        background-color: @shared-widget-hover-color;
+      }
+
+      span {
+        padding-right: @padding-min;
+      }
+    }
+  }
+}
+
+/*TOGGLE TRANSLATE WIDGET
+show translate button */
+#toggle-translate {
+  .btn.btn-secondary() !important; /* override yii2-translate-manager */
+  padding: 5px 25px !important; /* override yii2-translate-manager */
+  margin-top: 4px;
+  margin-left: 4px;
+  text-decoration: underline;
+  text-decoration-color: @danger-color;
+}
+
+//-----------------------------------------------
+// WIDGET PEOPLE - round image people who partecipates
+//-----------------------------------------------
+.people {
+  text-align: right;
+  margin-bottom: @margin-min;
+  float: right;
+
+  a {
+    border-radius: 50%;
+    border: 1px solid @border-color-default;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: @margin-min;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .post-footer {
+    .shared, .people {
+      width: 100%;
+    }
+  }
+
+  .shared {
+    margin-top: @margin-default;
+    font-size: 16px;
+    table {
+      margin: @margin-default auto;
+    }
+  }
+
+  .people {
+    text-align: center;
+  }
+}
+
+//-----------------------------------------------
+// more content - COMMENTI
+// answer
+//-----------------------------------------------
+#comments_anchor {
+  margin-top: 20px;
+}
+
+.comment_content {
+  .answer {
+    margin-top: 0;
+    margin-bottom: @margin-default;
+  }
+
+  .answer-action {
+    color: @text-main-color;
+  }
+
+  .comment-body p,
+  .answer-body p {
+    margin: @margin-min 0;
+    line-height: 1.3;
+  }
+
+  .footer {
+    border: 0;
+
+    .btn {
+      margin: 0;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
+
+.contribute-container textarea {
+  width: 100%;
+  height: 120px;
+  margin: @padding-default 0;
+}
+
+@media (max-width: 480px) {
+  .comment-body.media-body {
+    width: 100%;
+    display: block;
+  }
+
+  .risposta .img-left {
+    width: 30%;
+  }
+
+  .answer-body {
+    width: 60%;
+  }
+}
+
+.input-group .label-checkbox {
+  position: absolute;
+  top: -30px;
+  right: -35px;
+  @media (max-width: 380px) {
+    right: -45px;
+  }
+}
+
+//-----------------------------------------------
+// WIDGET PASSWORD INPUT
+//-----------------------------------------------
+.kv-strength-container .input-group .label-checkbox:after {
+  content: initial;
+}

@@ -1,0 +1,162 @@
+@import (optional) "../../vendor/lispa/amos-layout/src/assets/resources/base/less/variables.less";
+@import (optional) "../../vendor/lispa/amos-core/views/assets/web/css/less/variables.less";
+@import "variables-documents.less";
+
+//-----------------------------------------------
+// DASHBOARD WIDGET GRAPHIC
+//-----------------------------------------------
+
+.latest-documents {
+/*  overflow: hidden;*/
+  display: flex;
+  flex-direction: row;
+
+/*  background-color: #fff;*/
+
+  .box-widget-toolbar{
+    //display: flex;
+    //flex-direction: column;
+    height: 165px;
+    //text-align: right;
+    border-bottom:none;
+    border-right: 1px solid @primary-color;
+    width:20%;
+    float:left;
+    h1{
+      position: relative;
+      top: 20%;
+      padding: 0;
+      @media (min-width: 939px){
+        top: 40%;
+      }
+    }
+  }
+  .read-all{
+    position:absolute;
+    bottom: 10px;
+    a{
+      padding: 0;
+    }
+  }
+  section{
+    width: 80%;
+    @media screen and (max-width: 939px){
+      width: 100%;
+    }
+    .list-items{
+      display: flex;
+      height: 165px;
+      align-items: center;
+    }
+    .box-widget-title{
+      text-align: right;
+      position: relative;
+      top: 20%;
+    }
+    .container-icon{
+      margin: 0 auto;
+    }
+    .container-text{
+      width: 100% !important;
+      text-align:center;
+      border-top:1px solid @secondary-info-color;
+      margin-bottom: @margin-min;
+    }
+
+    .widget-listbox-option {
+      width: 33.33%;
+      margin: 0 10px;
+      height: 150px;
+      article {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        background-color: #eee;
+        height: 150px;
+        .container-icon {
+          /*text-align: center;
+          color: #fff;
+          float: left;
+          width: 50px;
+          height: 50px;
+          border-radius:50%;
+          color: @primary-color;*/
+          .dash {
+            font-size: 3em;
+            color: @primary-color;
+          }
+        }
+        .footer-listbox{
+          position: absolute;
+          text-align: center;
+          bottom:5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 939px) and (min-width: 320px){
+  .document.grid-item--width2{
+    width:100%;
+    height: 280px;
+
+    .latest-documents{
+      flex-direction:column;
+      height: 100%;
+
+      .box-widget-toolbar{
+        flex-direction: row-reverse;
+        border-right: none;
+        border-bottom: 1px solid @primary-color;
+        height: 35px;
+        width: 100%;
+        h1{
+          position: relative;
+          top: 0;
+          padding-left: 0;
+        }
+      }
+
+      section{
+        height: 285px;
+
+        .list-items{
+          flex-direction: column;
+          height: auto;
+
+          .widget-listbox-option{
+            width: 96%;
+            margin: 5px 0;
+            height: 55px;
+
+            article{
+              flex-direction: row;
+              height: 100%;
+              .footer-listbox{
+                position: absolute;
+                text-align: right;
+                bottom:0px;
+                right: 5px;
+              }
+
+            }
+          }
+        }
+        .container-text{
+          border: none;
+          text-align: left;
+          padding-left: 10px;
+          .listbox-date p{
+            margin: 0;
+          }
+        }
+      }
+      .read-all{
+        position: relative;
+        bottom: 5px;
+      }
+    }
+  }
+}
+

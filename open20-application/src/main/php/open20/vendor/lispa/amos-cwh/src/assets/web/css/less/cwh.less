@@ -1,0 +1,55 @@
+@import (optional) "../../vendor/lispa/amos-layout/src/assets/resources/base/less/variables.less";
+@import (optional) "../../vendor/lispa/amos-core/views/assets/web/css/less/variables.less";
+
+.fc-time-grid-container {
+  float: left;
+}
+#amos-cwh-tag {
+  hr  {
+    background-color: lighten(desaturate(@primary-color, 50%), 50%);
+    padding: @padding-medium;
+    width: 100%;
+    float: left;
+    border-top: 1px solid @border-color-default;
+    box-sizing: border-box;
+  }
+
+  .kv-tree-wrapper {
+    border-bottom: 0 none !important;
+  }
+
+  .amos-cwh-tag-tree-container {
+    margin-bottom: 50px;
+  }
+
+  .preview_tag_tree {
+    margin-bottom: @margin-default;
+
+    .tag_selected{
+      background-color: @light-background-color;
+      border: 1px solid #dddddd;
+      cursor: pointer;
+      margin: 3px 0;
+      padding: 5px;
+      text-transform: uppercase;
+
+      .tag_selected_part {
+        display: table-cell;
+
+        &.tag_selected_remove_container{
+          cursor: pointer;
+          width: 20px;
+          text-align: center;
+        }
+
+        .tag_selected_label{
+          font-weight: bold;
+        }
+
+        .tag_selected_parents {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

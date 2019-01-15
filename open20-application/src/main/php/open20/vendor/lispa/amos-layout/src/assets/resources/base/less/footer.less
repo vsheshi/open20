@@ -1,0 +1,61 @@
+@color-bullet-active: #1A946F;
+@color-bullet: lighten(@color-bullet-active, 50%);
+
+//-----------------------------------------------
+// FOOTER
+//-----------------------------------------------
+footer {
+  padding: 0;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+
+  .footer {
+    background-color: @footer-color;
+    height: 30px;
+  }
+
+  .footer-pagination {
+    background-color: @footer-color;
+    padding: 0;
+    text-align: left;
+
+    .dashboard-pagination {
+      display: table;
+      margin: 0 auto;
+
+      li {
+        background-color: @color-bullet;
+        margin: 0 @margin-min;
+        display: inline-block;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+
+        &:hover{
+          opacity: @text-link-hover-opacity
+        }
+        
+        &.add{
+          background-color: transparent;
+
+          a{
+            color: #fff;
+            font-size: 20px;
+          }
+        }
+
+        &.active {
+          background-color: @color-bullet-active;
+        }
+      }
+    }
+  }
+
+  img {
+    margin-right: 25px;
+    margin-bottom: @margin-medium;
+  }
+}
